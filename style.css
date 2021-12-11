@@ -1,0 +1,97 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.headerImageText {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sectionWrapper:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.loanText {
+  background-color: #23C3FF;
+  padding: 20px;
+  margin-top: 20px;
+  align-items: flex-end;
+}
+
+.loanText p {
+  padding: 20px;
+}
+
+.loanText .textContainer {
+  background-color: #AAE6FF;
+  margin-right: 10px;
+}
+
+.circle {
+  margin-bottom: 30px;
+}
+
+.helpSection {
+  position: relative;
+}
+
+.helpText {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px;
+  background-color: #CD98D7;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.price button {
+  background-color: #870AA0;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+
+
+@media (min-width: 768px) {
+  .price {
+    display: flex;
+  }
+}
