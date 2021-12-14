@@ -1,3 +1,8 @@
+:root {
+  --blue: #23C3FF;
+  --lightBlue: #AAE6FF;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -5,6 +10,11 @@ body, html {
 
 h1 {
   font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -36,6 +46,16 @@ img {
 
 .sectionWrapper:nth-child(odd) {
   background-color: lightgray;
+}
+
+.navbar {
+  position: sticky;
+  top: 20px;
+}
+
+.aboutLoan {
+  border: none;
+  background-color: transparent;
 }
 
 .loanText {
@@ -89,9 +109,72 @@ img {
   border: none;
 }
 
+.interestSection {
+  position: relative;
+}
+
+.interestInfo {
+  position: absolute;
+  top: 55%;
+  left: 3%;
+  padding: 5px 20px;
+  background-color: var(--lightBlue);
+}
+
+.graphHashtag {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+}
+
+.startupCompany {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+  padding-bottom: 0px;
+  background: linear-gradient(0.45turn, white, #23C3FF);
+}
+
+.startupCompany .textContainer {
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: var(--lightBlue);
+}
+
+.startupCompany .textContainer a {
+  padding: 5px;
+  color: black;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+.person {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+footer {
+  background-color: blue;
+}
+
+
 
 @media (min-width: 768px) {
-  .price {
+  .priceSection {
     display: flex;
+  }
+  .price {
+    display: block;
+    height: 250px;
+  }
+  .interestInfo, .graphHashtag {
+    top: 80%;
+  }
+  .interestInfo {
+    left: 20%;
+  }
+  .graphHashtag {
+    right: 20%;
   }
 }
