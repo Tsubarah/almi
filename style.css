@@ -12,6 +12,7 @@ body, html {
   font-style: normal;
   font-weight: 100;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -49,6 +50,7 @@ footer a {
 a {
   color: black;
 }
+
 .navbar-brand {
   padding: 0px;
 }
@@ -197,10 +199,10 @@ a {
 }
 
 .person {
-  width: 100%;
+  width: 90%;
   position: absolute;
   bottom: 0%;
-  right: -3%;
+  right: 0%;
 }
 
 .bigFont {
@@ -214,8 +216,8 @@ footer a:hover {
   cursor: pointer;
   font-size: 1.3rem;
   color: white;
-  font-weight: bold;
   text-decoration: underline;
+  transition-duration: 1s;
 }
 .btn-primary:hover {
   text-decoration: underline;
@@ -226,7 +228,9 @@ footer a:hover {
   color: white;
 }
 .footerInfo ul {
+  padding-left: 0px;
   padding-bottom: 20px;
+  text-align: left;
   list-style: none;
 }
 .socialMedia {
@@ -274,6 +278,7 @@ footer a:hover {
   .price {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     height: 250px;
   }
   .price p {
@@ -307,7 +312,7 @@ footer a:hover {
     height: 36vw;
   }
   .startupCompany .textContainer p {
-  font-size: 2rem;
+   font-size: 2rem;
    padding: 20px;
   }
   .person {
@@ -324,6 +329,9 @@ footer a:hover {
   .footerInfo {
     display: flex;
     justify-content: space-evenly;
+  }
+  .footerInfo ul {
+    padding-bottom: 0px;
   }
   .socialMedia img {
     width: 50%;
