@@ -23,20 +23,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Våra tjänser</a>
+                <a class="nav-link active" aria-current="page" href="#loanText">Våra tjänser</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Kunskap & inspiration</a>
+                <a class="nav-link" href="#dropdownContent">Uppstartslån</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Om Almi</a>
+                <a class="nav-link" href="#" target="_blank">Om Almi</a>
               </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <button type="button" class="btn btn-primary btn-sm ms-4">Logga in</button>
+            <button type="button" class="btn btn-primary btn-sm ms-lg-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Logga in</button>
           </div>
         </div>
       </nav>
@@ -63,7 +63,7 @@
 
   <main>
     <div class="container">
-      <section class="sectionWrapper">
+      <section class="sectionWrapper" id="loanText">
         <article class="loanText d-flex">
           
           <div class="leftContent col-9 col-md-8 col-lg-6">
@@ -73,10 +73,10 @@
           </div>
           
           <div class="rightContent col-3 col-md-4 col-lg-6 flex-column">
-            <div class="graphElement circle">
+            <div class="graphElement circle ms-lg-3">
               <img src="/assets/logos/circle.graph.png" alt="A graphical circle">
             </div>
-            <button type="button" class="btn btn-primary btn-sm">Läs mer</button>
+            <button type="button" class="btn btn-primary readMore btn-sm">Läs mer</button>
           </div>
           
         </article>
@@ -89,6 +89,14 @@
           <img src="assets/images/almi_help.jpg" alt="A woman smiling">
         </div>
       </section>
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="#dropdownContent" class="aboutLoan">
+          <h6 class="py-4 py-lg-5">
+            Läs mer om <span class="underline">Uppstartslån</span>
+            <i class="fas fa-sort-down ms-3"></i>
+          </h6>
+        </a>
+      </div>
       <section class="dropdownContent hide col-lg-8 ms-auto me-auto" id="dropdownContent">
         <h2>Om Uppstartslån</h2>
         <p class="mt-3">Tjänsten innefattar Uppstartslån för företag som inte har varit verksamma mer än 3 år.</p>
@@ -107,6 +115,34 @@
 
          <p class="pt-4">Every man who has lotted here over the centuries, has looked up to the light and imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing uncontrollable thirst, many have died trying. And then here there can be no true despair without hope. So as I terrorize Gotham, I will feed its people hope to poison their souls.</p>
       </section>
+
+      <!-- Login modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Användarnamn:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Lösenord:</label>
+                  <input class="form-control" id="message-text"></input>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Registrera</button>
+              <button type="button" class="btn btn-primary">Logga in</button>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <!-- apply modal -->
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -129,7 +165,7 @@
         </div>
       </div>
 
-      <section class="sectionWrapper priceSection justify-content-center justify-content-between"> 
+      <section class="sectionWrapper priceSection justify-content-center justify-content-between" id="priceSection"> 
           
         <div class="price col-md-3 p-lg-4">
           <div class="textContainer">
@@ -208,13 +244,16 @@
           <h3>Våra tjänster</h3>
           <ul>
             <li>
-              <a href="#">Affärsutveckling</a>
+              <a href="#" target="_blank">Affärsutveckling</a>
             </li>
             <li>
-              <a href="#">Lån</a>
+              <a href="#" target="_blank">Lån</a>
             </li>
             <li>
-              <a href="#">Riskkapital</a>
+              <a href="#priceSection">Uppstartslån</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Riskkapital</a>
             </li>
           </ul>
         </div>
@@ -223,13 +262,13 @@
           <h3>Kort om Almi</h3>
           <ul>
             <li>
-              <a href="#">Riskkapital</a>
+              <a href="#" target="_blank">Riskkapital</a>
             </li>
             <li>
-              <a href="#">Om webbplatsen</a>
+              <a href="#" target="_blank">Om webbplatsen</a>
             </li>
             <li>
-              <a href="#">Hållbarhet</a>
+              <a href="#" target="_blank">Hållbarhet</a>
             </li>
           </ul>
         </div>
