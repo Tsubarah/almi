@@ -103,9 +103,6 @@ a {
   background-color: var(--lightBlue);
   margin-right: 10px;
 }
-.rightContent {
-  margin-left: 20vw;
-}
 
 .circle {
   width: 20vw;
@@ -264,6 +261,9 @@ footer a:hover {
   .interestInfo p {
     font-size: 1.2rem;
     font-weight: bold;
+  }
+  .rightContent {
+    margin-left: 20vw;
   }
   .dropdownContent {
     padding: 40px;
