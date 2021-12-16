@@ -75,10 +75,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* .sectionWrapper:nth-child(odd) {
-  background-color: lightgray;
-} */
-
 .navbar {
   position: sticky;
   top: 20px;
@@ -255,6 +251,9 @@ footer a:hover {
   }
   p {
     line-height: 1.4;
+  }
+  .navbar-brand img {
+    width: 100%;
   }
   .aboutLoan {
     padding: 40px; 
