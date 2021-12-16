@@ -46,6 +46,9 @@ footer a {
   font-size: 1.1rem;
   color: white;
   text-decoration: none;
+  animation-direction:alternate;
+  transform: translate(1.2cm,1cm);
+  transition: all 1s;
 }
 a {
   color: black;
@@ -189,9 +192,13 @@ a {
 
 .underline {
   text-decoration: underline;
+  transition: all 1s;
 }
 .underline:hover {
   font-size: larger;
+  animation-direction:alternate;
+  transform: translate(1.2cm,1cm);
+  transition: all 1s;
 }
 
 .person {
