@@ -1,30 +1,47 @@
 :root {
   --blue: #23C3FF;
   --lightBlue: #AAE6FF;
+  --purple: #870AA0;
+  --lightPurple: #CD98D7;
 }
 
 body, html {
   margin: 0;
   padding: 0;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  scroll-behavior: smooth;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+h6 {
+  font-size: 1.2rem;
 }
 
 p {
   margin: 0;
+  line-height: 1.6;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand img {
+  width: 50%;
 }
 
 .hero {
@@ -32,7 +49,7 @@ img {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .headerImageText {
@@ -44,9 +61,9 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.sectionWrapper:nth-child(odd) {
+/* .sectionWrapper:nth-child(odd) {
   background-color: lightgray;
-}
+} */
 
 .navbar {
   position: sticky;
@@ -54,12 +71,13 @@ img {
 }
 
 .aboutLoan {
+  color: black;
   border: none;
   background-color: transparent;
 }
 
 .loanText {
-  background-color: #23C3FF;
+  background-color: var(--blue);
   padding: 20px;
   margin-top: 20px;
   align-items: flex-end;
@@ -70,11 +88,12 @@ img {
 }
 
 .loanText .textContainer {
-  background-color: #AAE6FF;
+  background-color: var(--lightBlue);
   margin-right: 10px;
 }
 
 .circle {
+  width: 20vw;
   margin-bottom: 30px;
 }
 
@@ -85,24 +104,35 @@ img {
 .helpText {
   position: absolute;
   top: 2vw;
-  right: 2vw;
+  right: 0vw;
   font-size: 3vw;
   font-weight: bold;
 }
-
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px 30px 10px;;
+}
 .price {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 8px;
-  background-color: #CD98D7;
+  background-color: var(--lightPurple);
   margin-bottom: 10px;
   margin-top: 20px;
   font-weight: bold;
 }
 
-.price button {
-  background-color: #870AA0;
+.btn-primary {
+  background-color: var(--purple);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+.btn-secondary {
+  background-color: lightgray;
   color: white;
   font-weight: bold;
   border-radius: 8px;
@@ -113,45 +143,69 @@ img {
   position: relative;
 }
 
+.interestSection img { 
+  margin-top: 10px;
+}
+
+
 .interestInfo {
   position: absolute;
-  top: 55%;
+  bottom: 5%;
   left: 3%;
-  padding: 5px 20px;
   background-color: var(--lightBlue);
 }
 
 .graphHashtag {
+  width: 10vw;
   position: absolute;
-  top: 55%;
+  bottom: 5%;
   right: 3%;
 }
 
 .startupCompany {
   position: relative;
-  height: 300px;
+  height: 64vw;
+  margin-top: 20px;
   padding: 20px;
   padding-bottom: 0px;
   background: linear-gradient(0.45turn, white, #23C3FF);
 }
 
 .startupCompany .textContainer {
+  height: 25vh;
   border: 1px solid #000;
   padding: 20px;
   background-color: var(--lightBlue);
 }
 
-.startupCompany .textContainer a {
-  padding: 5px;
-  color: black;
-  border: 1px solid #000;
-  text-decoration: none;
+.underline {
+  text-decoration: underline;
+}
+.underline:hover {
+  font-size: larger;
 }
 
 .person {
   width: 100%;
   position: absolute;
-  top: 20%;
+  top: 0%;
+  right: 0%;
+}
+
+.bigFont {
+  font-size: 1.5rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.btn-primary:hover {
+  text-decoration: underline;
+  background-color: var(--purple);
 }
 
 footer {
@@ -161,12 +215,48 @@ footer {
 
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3, h6 {
+    font-size: 2rem;
+  }
+  p, li {
+    font-size: 1.5rem;
+  }
+  p {
+    line-height: 1.4;
+  }
+  .aboutLoan {
+    padding: 40px; 
+  }
+  .loanText p {
+    font-size: 2rem;
+  }
+  .interestInfo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .dropdownContent {
+    padding: 40px;
+  }
   .priceSection {
     display: flex;
   }
   .price {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 250px;
+  }
+  .price p {
+    font-size: 1.4rem;
+    line-height: 8vh;
+  }
+  .bigFont {
+    font-size: 2rem;
   }
   .interestInfo, .graphHashtag {
     top: 80%;
@@ -174,7 +264,36 @@ footer {
   .interestInfo {
     left: 20%;
   }
+  .interestInfo li {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
   .graphHashtag {
     right: 20%;
+  }
+  .btn-primary, .btn-secondary {
+    width: 8vw;
+    height: 3vw;
+    font-size: 1.3rem;
+  }
+  .startupCompany {
+    margin-top: 20px;
+    padding: 80px;
+    height: 36vw;
+  }
+  .startupCompany .textContainer p {
+  font-size: 2rem;
+   padding: 20px;
+  }
+  .person {
+    text-align: center;
+  }
+  .person img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .underline {
+    text-decoration: none;
   }
 }

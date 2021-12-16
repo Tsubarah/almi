@@ -14,7 +14,9 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Almi</a>
+          <a class="navbar-brand" href="#">
+            <img src="/assets/logos/almi.graph.png" alt="Almi logo">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,22 +40,6 @@
           </div>
         </div>
       </nav>
-      <!-- <nav class="navbar row">
-        <div class="logo col col-6">
-          ALMI
-        </div>
-        
-        <input class="col col-3" type="text" placeholder="Sök..">
-        
-        
-        <div class="searchIcon col col-1">
-          <i class="fas fa-search"></i>
-        </div>
-  
-        <div class="hamburgerMenu col col-2 text-end">
-          <i class="fa fa-bars"></i>
-        </div>
-      </nav> -->
     </div>
 
 
@@ -64,10 +50,12 @@
       <div class="headerImageText">
         <h1>Söker ditt startup nya möjligheter?</h1>
         <div class="d-flex align-items-center justify-content-center">
-          <h6>Läs mer om Uppstartslån</h6>
-          <button class="mx-2 aboutLoan">
-            <i class="fas fa-sort-down"></i>
-          </button>
+          <a href="#dropdownContent" class="aboutLoan">
+            <h6 class="py-4 py-lg-5">
+              Läs mer om <span class="underline">Uppstartslån</span>
+              <i class="fas fa-sort-down ms-3"></i>
+            </h6>
+          </a>
         </div>
       
       </div>
@@ -76,23 +64,20 @@
 
   <main>
     <div class="container">
-      <section class="dropdownContent hide" id="dropdownContent">
-        <p>But we’ve met before. That was a long time ago, I was a kid at St. Swithin’s, It used to be funded by the Wayne Foundation. It’s an orphanage. My mum died when I was small, it was a car accident. I don’t remember it. My dad got shot a couple of years later for a gambling debt. Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand.</p>
-      </section>
       <section class="sectionWrapper">
         <article class="loanText d-flex">
           
-          <div class="leftContent col-9">
+          <div class="leftContent col-9 col-md-8 col-lg-6">
             <div class="textContainer">
               <p>Almi erbjuder lån och affärsutveckling till företag med tillväxtpontential</p>
             </div>
           </div>
           
-          <div class="rightContent col-3">
+          <div class="rightContent col-3 col-md-4 col-lg-6">
             <div class="graphElement circle">
-              Graphical element
+              <img src="/assets/logos/circle.png" alt="A graphical circle">
             </div>
-            <button>Läs mer</button>
+            <button type="button" class="btn btn-primary btn-sm">Läs mer</button>
           </div>
           
         </article>
@@ -101,44 +86,81 @@
           <!-- When snap, use pixels in mediaQuery -->
           <p class="helpText">Vi hjälper dig!</p>
           <div class="imgContainer mt-4">
-            <img src="assets/images/263653515_1684545421753063_699986088920057118_n.jpg" alt="cute girl">
+            <img src="assets/images/almifresh.jpg" alt="A woman smiling">
           </div>
         </section>
-        
+        <section class="dropdownContent hide col-lg-8 ms-auto me-auto" id="dropdownContent">
+          <h2>Om Uppstartslån</h2>
+          <p class="mt-3">Tjänsten innefattar Uppstartslån för företag som inte har varit verksamma mer än 3 år.</p>
+          <br>
+          <p>But we’ve met before. That was a long time ago, I was a kid at St. Swithin’s, It used to be funded by the Wayne Foundation. It’s an orphanage.</p>
+          <p>My mum died when I was small, it was a car accident. I don’t remember it. My dad got shot a couple of years later for a gambling debt. Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand.</p>
+
+          <ul class="pt-4">
+            <li>
+              Fast ränta på 5%
+            </li>
+            <li>
+              Amortering på en fast avgift av 500 SEK i månaden
+            </li>
+          </ul>
+
+          <p class="pt-4">Every man who has lotted here over the centuries, has looked up to the light and imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing uncontrollable thirst, many have died trying. And then here there can be no true despair without hope. So as I terrorize Gotham, I will feed its people hope to poison their souls.</p>
+        </section>
       
-      <!-- Put d-flex for breakpoint-->
+      <!-- apply modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Ansök om Uppstartslån</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Etiam a magna dope augue hendrerit accumsizzle. Aenizzle break it down ghetto. Its fo rizzle go to hizzle dolizzle, bizzle vitae, facilisizzle id, pizzle izzle, erat.</p> 
+              <br>
+              <p>The bizzle ante ipsizzle primizzle in shizznit orci luctus izzle boom shackalack posuere fo Check it out; Stuff dolizzle. Shizznit crazy. Black pharetra blandit quizzle. Fo shizzle sizzle the bizzle orci. Shit facilisis. Hizzle sizzle nulla, go to hizzle eu, scelerisque the bizzle, blandizzle cool, magna.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+              <button type="button" class="btn btn-primary">Ansök</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="sectionWrapper priceSection justify-content-center justify-content-between"> 
           
         <div class="price col-md-3 p-lg-4">
           <div class="textContainer">
-              <p>Belopp: 10 000kr</p>
-              <p>Återbetalning: 3mån.</p>
+              <p>Belopp: <span class="bigFont">10 000kr</span></p>
+              <p>Återbetalning: 3 mån.</p>
             </div>
           
           <div>
-            <button class="p-lg-2 ms-4">Ansök</button>
+            <button type="button" class="applyBtn btn btn-primary btn-sm btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ansök</button>
           </div>
         </div>
 
         <div class="price col-md-3 p-lg-4">
           <div class="textContainer">
-            <p>Belopp: 25 000kr</p>
-            <p>Återbetalning: 6mån.</p>
+            <p>Belopp: <span class="bigFont">25 000kr</span></p>
+            <p>Återbetalning: 6 mån.</p>
           </div>
 
           <div>
-            <button class="p-lg-2 ms-4">Ansök</button>
+            <button type="button" class="applyBtn btn btn-primary btn-sm btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ansök</button>
           </div>
         </div>
 
         <div class="price col-md-3 p-lg-4">
           <div class="textContainer">
-            <p>Belopp: 50 000kr</p>
-            <p>Återbetalning: 12mån.</p>
+            <p>Belopp: <span class="bigFont">50 000kr</span></p>
+            <p>Återbetalning: 12 mån.</p>
           </div>
 
           <div>
-            <button class="p-lg-2 ms-4">Ansök</button>
+            <button type="button" class="applyBtn btn btn-primary btn-sm btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ansök</button>
           </div>
         </div>
       </section>
@@ -146,10 +168,18 @@
     
     <section class="sectionWrapper interestSection d-flex">
       <img src="/assets/images/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg" alt="Two women talking" class="col-md-8 ms-md-auto me-md-auto">
-      <div class="textContainer interestInfo col-6 col-md-4">
-        <p> - 100% Statligt ägd</p>
-        <p> - Fast ränta</p>
-        <p> - Fast amortering</p>
+      <div class="textContainer interestInfo col-7 col-md-4 col-lg-2">
+        <ul class="pt-2">
+          <li>
+            100% Statligt ägd
+          </li>
+          <li>
+            Fast ränta
+          </li>
+          <li>
+            Fast amortering
+          </li>
+        </ul>
       </div>
       <div class="graphElement graphHashtag">
         <img src="/assets/logos/266587144_415876636932918_9021035658667448225_n.png" alt="hashtag graphical element">
@@ -157,13 +187,16 @@
     </section>
 
     <section class="sectionWrapper">
-      <article class="startupCompany">
-        <div class="textContainer">
+      <article class="startupCompany row  d-flex justify-content-center">
+        <div class="textContainer col-sm-9 col-lg-6">
           <h3>Prisbelönt app ger godare skolmat</h3>
-          <p>Uppstartslån blev starten för Mitt Gastronomi</p>
-          <a href="#">Läs mer om Mitt Gastronomi</a>
+          <p>Uppstartslån blev starten för 
+            <br>
+            <span class="underline"><strong>Mitt Gastronomi</strong></span>
+          </p>
+          <!-- <a href="#">Läs mer om Mitt Gastronomi</a> -->
         </div>
-        <div class="person row">
+        <div class="person col-lg-6">
           <img src="/assets/images/265486843_360778802481851_4625635420819228600_n.png" alt="woman posing" class="pull-right">
         </div>
       </article>
@@ -175,7 +208,7 @@
   </main>
 
 
-
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
