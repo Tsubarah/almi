@@ -37,6 +37,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+footer {
+  background-color: blue;
+}
+footer a {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+}
+a {
+  color: black;
+}
 .navbar-brand {
   padding: 0px;
 }
@@ -90,6 +102,9 @@ img {
 .loanText .textContainer {
   background-color: var(--lightBlue);
   margin-right: 10px;
+}
+.rightContent {
+  margin-left: 20vw;
 }
 
 .circle {
@@ -147,7 +162,6 @@ img {
   margin-top: 10px;
 }
 
-
 .interestInfo {
   position: absolute;
   bottom: 5%;
@@ -188,29 +202,40 @@ img {
 .person {
   width: 100%;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  bottom: 0%;
+  right: -3%;
 }
 
 .bigFont {
   font-size: 1.5rem;
 }
-
-a:link {
-  text-decoration: none;
-}
 a:hover {
   color: black;
+}
+
+footer a:hover {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
   text-decoration: underline;
 }
 .btn-primary:hover {
   text-decoration: underline;
   background-color: var(--purple);
 }
-
-footer {
-  background-color: blue;
+.footerInfo {
+  padding: 20px 10px 20px 10px;
+  color: white;
 }
+.footerInfo ul {
+  padding-bottom: 20px;
+  list-style: none;
+}
+.socialMedia {
+  background-color: white;
+}
+
 
 
 
@@ -295,5 +320,13 @@ footer {
   }
   .underline {
     text-decoration: none;
+  }
+  .footerInfo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .socialMedia img {
+    width: 50%;
+    height: auto;
   }
 }
