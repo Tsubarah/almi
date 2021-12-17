@@ -297,7 +297,7 @@ footer a:hover {
     font-size: 2rem;
   }
   .interestInfo, .graphHashtag {
-    top: 80%;
+    bottom: 5%;
   }
   .interestInfo {
     left: 20%;
